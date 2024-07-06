@@ -1,11 +1,8 @@
-shared_script '@radiant-pvp/ai_module_fg-obfuscated.lua'
-shared_script '@radiant-pvp/shared_fg-obfuscated.lua'
-
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-author 'Cifuentes'
+author 'Radiant'
 version '1.0.1'
 
 shared_scripts {
@@ -14,11 +11,11 @@ shared_scripts {
 }
 
 client_scripts {
-    'client/*.lua',
-    'shared/*.lua'
+    'clmain.lua',
+    'config.lua'
 }
 
 server_scripts {
-    'server/*.lua',
-    'shared/*.lua'
+    'svmain.lua',
+    'config.lua'
 }
