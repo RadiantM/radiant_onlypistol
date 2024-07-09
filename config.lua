@@ -28,9 +28,3 @@ Config.Weapons = {
     'weapon_revolver_mk2',
     'weapon_pistol_mk2',
 }
-
-Config.Commands = true 
-Config.CommandsN = {
-    join = 'joinOnlyPistol',
-    leave = 'leaveOnlyPistol'
-}
