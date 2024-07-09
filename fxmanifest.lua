@@ -6,8 +6,7 @@ author 'Radiant'
 version '1.0.1'
 
 shared_scripts {
-    '@es_extended/imports.lua',
-    '@ox_lib/init.lua'
+    '@es_extended/imports.lua'
 }
 
 client_scripts {
