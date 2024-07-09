@@ -31,27 +31,25 @@ AddEventHandler('radiantm:leaveOnlyP', function()
     TriggerServerEvent('radiant:setBucket', 0)
 end)
 
-if Config.Commands then
-    RegisterCommand(Config.CommandsN.join, function()
-        local playerPed = PlayerPedId()
+RegisterCommand('joinOP', function()
+    local playerPed = PlayerPedId()
     
-        if IsEntityDead(playerPed) then
-            return
-        end
+    if IsEntityDead(playerPed) then
+        return
+    end
     
-        TriggerEvent('radiantm:joinOnlyP')
-    end)
+    TriggerEvent('radiantm:joinOnlyP')
+end)
     
-    RegisterCommand(Config.CommandsN.leave, function()
-        local playerPed = PlayerPedId()
+RegisterCommand('leaveOP, function()
+   local playerPed = PlayerPedId()
     
-        if IsEntityDead(playerPed) or not IsPlayerPlaying then
-            return
-        end
+    if IsEntityDead(playerPed) or not IsPlayerPlaying then
+       return
+    end
     
-        TriggerEvent('radiantm:leaveOnlyP')
-    end)
-end
+    TriggerEvent('radiantm:leaveOnlyP')
+end)
 
 AddEventHandler('esx:onPlayerDeath', function(data)
     IsDead = true
