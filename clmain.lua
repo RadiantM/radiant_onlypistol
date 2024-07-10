@@ -41,7 +41,7 @@ RegisterCommand('joinOP', function()
     TriggerEvent('radiantm:joinOnlyP')
 end)
     
-RegisterCommand('leaveOP, function()
+RegisterCommand('leaveOP', function()
    local playerPed = PlayerPedId()
     
     if IsEntityDead(playerPed) or not IsPlayerPlaying then
