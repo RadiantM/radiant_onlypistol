@@ -5,7 +5,7 @@ IsPlayerPlaying = false
 RegisterNetEvent('radiantm:joinOnlyP')
 AddEventHandler('radiantm:joinOnlyP', function()
     local playerPed = PlayerPedId()
-    isPlayerPlaying = true
+    IsPlayerPlaying = true
 
     local teleportLocation = Config.Teleports[math.random(#Config.Teleports)]
     TriggerServerEvent('radiant:setBucket', 11)
